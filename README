@@ -1,0 +1,49 @@
+This is a small example program, demonstrating the use of libopencm3 with
+the VESNA platform. It blinks the yellow LED on the VESNA core board and
+continuously writes "Hello, world!" to the serial port at 19200 bauds.
+
+To compile:
+
+$ make
+
+To flash using OpenOCD and Olimex ARM-USB-OCD:
+
+$ make hello-world.u
+
+To see the output on the serial port:
+
+$ stty -F /dev/ttyUSB0 19200
+$ cat /dev/ttyUSB0
+
+(or use your favorite serial terminal emulator)
+
+
+For more info on VESNA, see http://sensorlab.ijs.si/hardware.html
+
+
+LICENSE
+
+This code is based on the example in the libopencm3 distribution.
+
+It was modified for use with the VESNA platform by
+Tomaz Solc <tomaz.solc@tablix.org>
+
+The original files carry the following copyright notice:
+
+   This file is part of the libopencm3 project.
+  
+   Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+   Copyright (C) 2010 Piotr Esden-Tempski <piotr@esden.net>
+  
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+  
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+  
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
