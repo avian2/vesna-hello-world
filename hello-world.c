@@ -54,9 +54,9 @@ int _write(int file, char *ptr, int len)
 /* Delay execution for some arbitrary amount of time */
 void delay(void)
 {
-	int i;
+	int j;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    while(1) {};
 
-	for (i = 0; i < 8000000; i++) {
+	for (j = 0; j < 8000000; j++) {
 		__asm__("nop");
 	}
 }
