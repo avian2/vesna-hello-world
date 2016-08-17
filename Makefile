@@ -14,7 +14,7 @@ LDFLAGS		+= -Wl,--start-group -lc -lgcc -lnosys -Wl,--end-group \
 OBJS		+= $(BINARY).o
 
 OPENOCD		?= openocd
-OPENOCD_PARAMS  ?= -f interface/olimex-arm-usb-ocd.cfg -f target/stm32f1x.cfg
+OPENOCD_PARAMS  ?= -f interface/ftdi/olimex-arm-usb-ocd.cfg -f target/stm32f1x.cfg
 
 all: $(BINARY).bin
 
